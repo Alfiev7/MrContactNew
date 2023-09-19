@@ -13,10 +13,9 @@ export function App() {
                 <AppHeader />
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/todo" element={<TodoIndex />} />
                 </Routes>
             </section>
         </Router>
     )
 }
+
