@@ -26,9 +26,11 @@ function query(filterBy = {}) {
 function getById(contactId) {
   return storageService.get(STORAGE_KEY, contactId)
 }
+
 function remove(contactId) {
   return storageService.remove(STORAGE_KEY, contactId)
 }
+
 function save(contact) {
   if (contact._id) {
     return storageService.put(STORAGE_KEY, contact)
