@@ -10,7 +10,6 @@ import { ContactIndex } from './views/ContactIndex.jsx'
 import { Home } from './views/Home.jsx'
 
 export function App() {
-
   return (
     <Router>
       <section className='app'>
@@ -18,10 +17,9 @@ export function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/contact' element={<ContactIndex />} />
-<Route path="/contact/:contactid" element={<ContactDetails />} />
+          <Route path='/contact/:contactid' element={<ContactDetails />} />
         </Routes>
       </section>
     </Router>
   )
-
 }
