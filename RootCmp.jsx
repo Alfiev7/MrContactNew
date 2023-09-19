@@ -11,17 +11,18 @@ import { Home } from './views/Home.jsx'
 
 export function App() {
 
-  return (
-    <Router>
-      <section className='app'>
-        <AppHeader />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/contact' element={<ContactIndex />} />
-<Route path="/contact/:contactid" element={<ContactDetails />} />
-        </Routes>
-      </section>
-    </Router>
-  )
+    return (
+        <Router>
+            <section className='app'>
+                <AppHeader />
+                <Routes>
+                    <Route path='/' element={<Home />} />
+                    <Route path='/contact' element={<ContactIndex />} />
+                    <Route path="/contact/:contactid" element={<ContactDetails />} />
+                    <Route path="/contact/:contactid/edit" element={<ContactEdit />} />
+                </Routes>
+            </section>
+        </Router>
+    )
 
 }
